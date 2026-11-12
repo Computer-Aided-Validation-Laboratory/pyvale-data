@@ -1,5 +1,4 @@
 {
-  "fixture": "plate_validation_2d.npz",
   "source_files": [
     "case18_out.e",
     "case18_d_out.e"
@@ -36,5 +35,139 @@
   "regression_absolute_tolerance": {
     "temperature": 1e-10,
     "strain": 1e-12
-  }
+  },
+  "fixture_axes": {
+    "plate_validation_2d.npz": {
+      "sim_temp": [
+        "point",
+        "component",
+        "time",
+        "epis_trans",
+        "aleatory"
+      ],
+      "exp_temp": [
+        "point",
+        "component",
+        "time",
+        "aleatory"
+      ],
+      "sim_strain": [
+        "point",
+        "component",
+        "time",
+        "epis_trans",
+        "aleatory"
+      ],
+      "exp_strain": [
+        "point",
+        "component",
+        "time",
+        "aleatory"
+      ]
+    },
+    "plate_validation_2d_nominal.npz": {
+      "sim_temp": [
+        "point",
+        "component",
+        "time",
+        "aleatory"
+      ],
+      "exp_temp": [
+        "point",
+        "component",
+        "time",
+        "aleatory"
+      ],
+      "sim_strain": [
+        "point",
+        "component",
+        "time",
+        "aleatory"
+      ],
+      "exp_strain": [
+        "point",
+        "component",
+        "time",
+        "aleatory"
+      ]
+    },
+    "plate_validation_2d_steady.npz": {
+      "sim_temp": [
+        "point",
+        "component",
+        "epis_trans",
+        "aleatory"
+      ],
+      "exp_temp": [
+        "point",
+        "component",
+        "aleatory"
+      ],
+      "sim_strain": [
+        "point",
+        "component",
+        "epis_trans",
+        "aleatory"
+      ],
+      "exp_strain": [
+        "point",
+        "component",
+        "aleatory"
+      ]
+    },
+    "plate_validation_2d_steady_nominal.npz": {
+      "sim_temp": [
+        "point",
+        "component",
+        "aleatory"
+      ],
+      "exp_temp": [
+        "point",
+        "component",
+        "aleatory"
+      ],
+      "sim_strain": [
+        "point",
+        "component",
+        "aleatory"
+      ],
+      "exp_strain": [
+        "point",
+        "component",
+        "aleatory"
+      ]
+    },
+    "plate_sensorsim_2d.npz": {
+      "sim_temp": [
+        "repeat",
+        "point",
+        "component",
+        "time"
+      ],
+      "exp_temp": [
+        "repeat",
+        "point",
+        "component",
+        "time"
+      ],
+      "sim_strain": [
+        "repeat",
+        "point",
+        "component",
+        "time"
+      ],
+      "exp_strain": [
+        "repeat",
+        "point",
+        "component",
+        "time"
+      ]
+    }
+  },
+  "scenario_order": [
+    "nominal",
+    "perturbed"
+  ],
+  "synthetic_experiment": "perturbed",
+  "steady_time": 200.0
 }
