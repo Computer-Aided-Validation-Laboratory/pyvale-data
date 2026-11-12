@@ -26,7 +26,7 @@ root:
 find Data -type f ! -path '*/__pycache__/*' -print0 \
   | sort -z \
   | xargs -0 sha256sum \
-  | awk '{path=$2; sub(/^Data\\//, "", path); print path " sha256:" $1}' \
+  | awk '{path=$2; sub(/^Data\//, "", path); print path " sha256:" $1}' \
   | sort > registry.txt
 ```
 
